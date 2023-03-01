@@ -27,6 +27,13 @@ siteUrl:`https://gatsbystarterdefaultsource.gatsbyjs.io/`,
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options:{
+        spaceId: `0snhhfen4xf8`,
+        accessToken: `uh_k3NSNcUw_ApeSYJX1R-GFgHN58eVjhyBCCPv0hDA`
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
