@@ -6,14 +6,13 @@
  */
 
 import * as React from "react"
-import { propTypes } from "prop-types"
+import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import styled, { ThemeProvider } from "styled-components"
+import styled, { ThemeProvider } from 'styled-components'
 
-import { Gray } from "./themes/Gray"
-import Header from "./header"
+import { Gray } from './themes/Gray'
+import { Header } from "./Header"
 import "./layout.css"
-
 
 const Content = styled.div`
   margin: 0 auto;
@@ -50,6 +49,10 @@ const Layout = ({ children }) => {
       </Content>
     </ThemeProvider>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout
